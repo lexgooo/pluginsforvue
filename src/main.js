@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import MonthPicker from './lib'
+import {MonthPicker} from './index'
 import 'reset-css'
 
 Vue.config.productionTip = false

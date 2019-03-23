@@ -1,5 +1,5 @@
 
-import MonthPicker from './lib'
+import MonthPicker from './monthPicker'
 
 
 export {MonthPicker}
