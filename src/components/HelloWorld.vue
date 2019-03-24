@@ -2,7 +2,7 @@
   <div class="hello">
     <month-picker :data-gap="['2018-1', '2019-12']"></month-picker>
     <div class="lib">
-      
+      <tree :datas="tree"/>
     </div>
   </div>
 </template>
@@ -15,7 +15,56 @@ export default {
   },
   data() {
     return {
-      show: true
+      show: true,
+      tree: {
+        title: '总菜单',
+        children: [
+          {
+            title: '菜单1',
+            id: '1',
+            children: [
+              {
+                title: '菜单1-1',
+                id: '1-1'
+              },
+              {
+                title: '菜单1-2',
+                id: '1-2'
+              },
+              {
+                title: '菜单1-3',
+                id: '1-3',
+                children: [
+                  {
+                    title: '菜单1-3-1',
+                    id: '1-3-1'
+                  },
+                  {
+                    title: '菜单1-3-2',
+                    id: '1-3-2'
+                  },
+                  {
+                    title: '菜单1-3-3',
+                    id: '1-3-3'
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            title: '菜单2',
+            id: '2'
+          },
+          {
+            title: '菜单3',
+            id: '3'
+          },
+          {
+            title: '菜单4',
+            id: '4'
+          }
+        ]
+      }
     }
   }
 }

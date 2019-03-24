@@ -1,5 +1,6 @@
 
 import MonthPicker from './monthPicker'
+import Tree from './tree'
 
 
-export {MonthPicker}
+export {MonthPicker, Tree}
